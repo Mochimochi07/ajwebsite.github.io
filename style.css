@@ -188,30 +188,13 @@ header.sticky{
 .about{
 	background-color: #4a4a4a;
 	display: grid;
-	grid-template-columns: repeat(2, 2fr);
 	align-items: center;
-	grid-gap: 2rem;
-}
-.about-img img{
-	max-width: 100%;
-	width: 540px;
-	height: auto;
-}
-.about-text h2{
-	font-size: var(--h2-font);
-	font-weight: 500;
-	margin: 8px 0px 25px;
-	line-height: 1.1;
-	color: white;
+	
 }
 
-.about-text p{
-	max-width: 550px;
-	font-size: var(--p-font);
-	color: white;
-	line-height: 28px;
-	margin-bottom: 45px;
-}
+
+
+
 
 .heading{
 	text-align: center;
@@ -477,3 +460,41 @@ background-color: #4a4a4a;
 		transition: .3s;
 	}
 }
+
+.tab {
+	overflow: hidden;
+	border: 1px solid #4a4a4a;
+	background-color: #4a4a4a;
+	display: table-cell; vertical-align: middle; text-align: center
+  }
+  
+  .tab button {
+	background-color: inherit;
+	margin: auto;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color: white;
+  }
+  
+
+  .tab button:hover {
+	background-color: #ddd;
+  }
+  
+
+  .tab button.active {
+	background-color: #1c1c1c;
+  }
+  
+  
+  .tabcontent {
+	display: none;
+	padding: 100px 12px;
+	border: none;
+	border-top: none;
+	color: white;
+  }
