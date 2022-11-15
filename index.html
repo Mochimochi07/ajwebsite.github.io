@@ -64,28 +64,61 @@
 
     
         <div class="home-img">
-            <img src="https://avatars.githubusercontent.com/u/108660194?v=4">
+            <img src="https://scontent.fmnl3-1.fna.fbcdn.net/v/t39.30808-6/310433628_1499456283860666_1673635583154109601_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEzKmbmepQf1LsZlM57zIPrFwIR_OoMeGgXAhH86gx4aAgeYdmcb-r9Nzm7o8gDyALxJsd-jHAvecbimx9Ry4O4&_nc_ohc=Uxdc98qnu68AX_VCz9o&_nc_zt=23&_nc_ht=scontent.fmnl3-1.fna&oh=00_AfAprUfiOns4xH8og03oxKEYoVY24DFCB7IFausj4iLanA&oe=6377CEF7">
         </div>
     </section>
 
 
+    
+
+
+
 
     <section class="about" id="about">
-       
-        <div class="about-text">
-            
-            <h2>My Career</h2>
+
+
+
+        
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'MyTechnology')">My Technology</button>
+            <button class="tablinks" onclick="openCity(event, 'Futurethings')">Future things</button>
+            <button class="tablinks" onclick="openCity(event, 'MyCareer')">My Career</button>
+          </div>
+          
+          <div id="MyTechnology" class="tabcontent">
+            <h2>My Technology</h2>
             <p>
-                Hi, I am a graduate of Polytechnic University of the Philippines Sto Tomas and I specialize in strategizing and coding in most fields.
-                I am more of a tactical person when it comes to Information Technology and I plan on getting a doctorate in Internet of Things. 
-                I use statistics and theories often to exercise my thinking and learning skills. 
-                
+                I made my own ideology from scratch and experience. 
+                Its all about the times and its decision in my life.
+                I made this technology because i have many things that i would like to achieve.
+                The dreams that i have and the decisions made for its research are from my spirit alone.
+                I really love modifying things and that made me more excited on exploring new things.
+                Yes, my technology focuses more on Time and its connected attributes.
+                Artificial intelligence, dreams and time drives me to focus more on purpose and life.
+                I already made a few projects with some of its unique functions and i'm still researching for new things to make
+                I'm not allowed to say much of it because it's confidential and it's hard to explain. 
+                It's not ready to be revealed for the world to see because i will be using it for my master's and doctorate.
+                The ideology that i made shaped my way of thinking and gave me back the power that i had to make things great.
+<br>
+<br>
+                NOTE: Its a real technology that has its own purpose and NOT A COMPANY.
+              
+              
+              
+
+              
+
+
+
+
+
+
+
 
             </p>
-            
-        </div>
-        <div class="about-text">
-            
+          </div>
+          
+          <div id="Futurethings" class="tabcontent">
             <h2>My Futuristic Things </h2>
             <p>
                 I develop simple programs with tons of impact to the industry.
@@ -93,11 +126,51 @@
                 I am not much of a designer but i do make up for the different functions of an app through my designs.
                 When it comes to programs I am highly resourceful to face the differences to achieve my goal.
                 Even though there are some limitations in every learning I still train harder by coding and planning ahead.
+                Life taught us to be better and stronger through challenges.
+                Everything ahead of us is the future that i want to modify for the better.
+                I know that my road is not easy but it is going to be more challenging than i could hope for.
+                
 
 
             </p>
-            
-        </div>
+          </div>
+          
+          <div id="MyCareer" class="tabcontent">
+            <h2>My Career</h2>
+            <p>
+                Hi, I am a graduate of Polytechnic University of the Philippines Sto Tomas and I specialize in strategizing and coding in most fields.
+                I am more of a tactical person when it comes to Information Technology and I plan on getting a doctorate in Internet of Things. 
+                I use statistics and theories often to exercise my thinking and learning skills. 
+                I have tons of skills in some parts of IT and those things helped me grow my confidence.
+                I would like to say thanks to my teachers for teaching me.
+                Although I'm not much present in some lessons the teachings still remains as an emergency strength in time of need.
+                I find my failures and the lessons much comforting in times of trouble and challenge because it made me better.
+                In my studies I was given tons of opportunities and a recommendation for a Master's degree in Cyber forensics in BSU by my professor.
+                I'm not going to reject those things because i'll be using these for the next generation, 
+                not now but in the right time with the introduction of my new technology.
+
+
+
+
+
+                
+                
+
+            </p>
+          </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+        
         
 
 
@@ -290,9 +363,39 @@
 
 
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal">
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+	<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+    </script>
     
     
   </body>
